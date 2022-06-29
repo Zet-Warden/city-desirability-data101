@@ -121,7 +121,7 @@ external_stylesheets = [
 
 #  initialize dashboard
 app = Dash(__name__, external_stylesheets=external_stylesheets, title='City Desirability Dashboard')
-
+server = app.server
 
 #  dashboard layout
 app.layout = html.Div(children=[html.Header(id='navbar', 
